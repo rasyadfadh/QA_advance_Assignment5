@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     working_dir: /app
     volumes:
-      - .:/app
+      /d/jenkins_temp_build/:/app
     command: sh -lc "npm install && npm test"
     # If you need interactive debugging:
     tty: true
